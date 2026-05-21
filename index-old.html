@@ -17,7 +17,7 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #2c3e50;
-            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -26,309 +26,195 @@
         }
         
         .container {
-            max-width: 700px;
+            max-width: 600px;
             width: 100%;
             background: white;
-            border-radius: 24px;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             overflow: hidden;
-            animation: slideUp 0.6s ease-out;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
         
         .hero {
-            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
-            padding: 60px 45px;
+            padding: 50px 40px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '🌳';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            font-size: 150px;
-            opacity: 0.1;
-        }
-        
-        .hero::after {
-            content: '🍽️';
-            position: absolute;
-            bottom: -30px;
-            left: -30px;
-            font-size: 140px;
-            opacity: 0.1;
         }
         
         .hero h1 {
-            font-size: 2.8em;
-            margin-bottom: 20px;
-            line-height: 1.1;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            line-height: 1.2;
         }
         
         .hero p {
-            font-size: 1.3em;
+            font-size: 1.2em;
             opacity: 0.95;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .emoji-badge {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 8px 16px;
-            border-radius: 50px;
-            margin-bottom: 15px;
-            font-size: 1.8em;
         }
         
         .content {
-            padding: 45px;
-        }
-        
-        .intro-text {
-            text-align: center;
-            font-size: 1.15em;
-            color: #5a6c7d;
-            margin-bottom: 35px;
-            line-height: 1.7;
-        }
-        
-        .intro-text strong {
-            color: #4a7c2c;
+            padding: 40px;
         }
         
         .benefits {
-            margin: 40px 0;
+            margin: 30px 0;
         }
         
         .benefit {
             display: flex;
             align-items: start;
-            margin-bottom: 28px;
-            padding: 20px;
-            background: #f8fdf4;
-            border-radius: 16px;
-            border-left: 5px solid #4a7c2c;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .benefit:hover {
-            transform: translateX(5px);
-            box-shadow: 0 8px 20px rgba(74, 124, 44, 0.15);
+            margin-bottom: 20px;
         }
         
         .benefit-icon {
-            font-size: 2.2em;
-            margin-right: 18px;
+            font-size: 1.5em;
+            margin-right: 15px;
             flex-shrink: 0;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
         }
         
         .benefit-text h3 {
-            color: #4a7c2c;
-            margin-bottom: 8px;
-            font-size: 1.2em;
+            color: #e74c3c;
+            margin-bottom: 5px;
+            font-size: 1.1em;
         }
         
         .benefit-text p {
-            color: #6c7a89;
-            font-size: 0.98em;
-            line-height: 1.6;
+            color: #7f8c8d;
+            font-size: 0.95em;
         }
         
         .form-section {
-            background: linear-gradient(135deg, #f8fdf4 0%, #e8f5e0 100%);
-            padding: 40px;
-            border-radius: 20px;
-            margin: 40px 0;
-            border: 2px solid #d4e9cc;
-            box-shadow: 0 10px 30px rgba(74, 124, 44, 0.1);
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
         }
         
         .form-section h2 {
             text-align: center;
-            color: #2d5016;
-            margin-bottom: 25px;
-            font-size: 1.8em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
-            color: #2d5016;
-            font-weight: 600;
-            font-size: 0.95em;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-weight: 500;
         }
         
         .form-group input {
             width: 100%;
-            padding: 15px 18px;
-            border: 2px solid #c9e0bf;
-            border-radius: 12px;
-            font-size: 1.05em;
-            transition: all 0.3s;
-            background: white;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
         }
         
         .form-group input:focus {
             outline: none;
-            border-color: #4a7c2c;
-            box-shadow: 0 0 0 4px rgba(74, 124, 44, 0.1);
+            border-color: #e74c3c;
         }
         
         .submit-btn {
             width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            padding: 15px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
             color: white;
             border: none;
-            border-radius: 12px;
-            font-size: 1.2em;
+            border-radius: 8px;
+            font-size: 1.1em;
             font-weight: bold;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(74, 124, 44, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         
         .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(74, 124, 44, 0.4);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
         }
         
         .submit-btn:active {
-            transform: translateY(-1px);
+            transform: translateY(0);
         }
         
         .privacy-note {
             text-align: center;
-            font-size: 0.88em;
-            color: #7a8c9e;
-            margin-top: 18px;
+            font-size: 0.85em;
+            color: #95a5a6;
+            margin-top: 15px;
         }
         
         .trust-badges {
             display: flex;
             justify-content: center;
-            gap: 35px;
-            margin-top: 40px;
-            padding-top: 35px;
-            border-top: 2px solid #e0f0d8;
+            gap: 30px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #ecf0f1;
         }
         
         .badge {
             text-align: center;
-            color: #6c7a89;
-            transition: transform 0.3s ease;
-        }
-        
-        .badge:hover {
-            transform: scale(1.1);
+            color: #7f8c8d;
         }
         
         .badge-icon {
-            font-size: 2.5em;
-            margin-bottom: 8px;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+            font-size: 2em;
+            margin-bottom: 5px;
         }
         
         .badge-text {
-            font-size: 0.92em;
-            font-weight: 600;
-            color: #4a7c2c;
+            font-size: 0.9em;
         }
         
         @media (max-width: 600px) {
             .hero {
-                padding: 40px 25px;
-            }
-            
-            .hero h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 30px 25px;
-            }
-            
-            .form-section {
                 padding: 30px 20px;
             }
             
-            .trust-badges {
-                gap: 20px;
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .form-section {
+                padding: 20px;
             }
         }
         
         .success-message {
             display: none;
-            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
-            border: 2px solid #b1dfbb;
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
             color: #155724;
-            padding: 30px;
-            border-radius: 16px;
+            padding: 20px;
+            border-radius: 10px;
             text-align: center;
-            animation: slideUp 0.5s ease-out;
         }
         
         .success-message h3 {
-            margin-bottom: 12px;
-            font-size: 1.6em;
-        }
-        
-        .success-message p {
-            font-size: 1.05em;
-            line-height: 1.6;
-        }
-        
-        .local-badge {
-            background: #fff;
-            padding: 8px 16px;
-            border-radius: 50px;
-            display: inline-block;
-            font-size: 0.9em;
-            color: #4a7c2c;
-            font-weight: 600;
-            margin-top: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="hero">
-            <div class="emoji-badge">🌟</div>
-            <h1>Your Ultimate Islington Weekend Awaits</h1>
+            <h1>🌟 Your Ultimate Islington Weekend Awaits</h1>
             <p>Get the insider's guide to the best 48 hours in Islington</p>
-            <div class="local-badge">🗺️ Created by Locals, For Explorers</div>
         </div>
         
         <div class="content">
-            <p class="intro-text">
-                Whether you're a <strong>longtime resident</strong> or just visiting, this guide reveals 
-                the <strong>hidden gems, local favorites, and must-visit spots</strong> that most people miss.
-            </p>
-            
             <div class="benefits">
                 <div class="benefit">
                     <div class="benefit-icon">🍽️</div>
@@ -364,7 +250,7 @@
             </div>
             
             <div class="form-section">
-                <h2>📩 Get Your Free Guide Now</h2>
+                <h2>Get Your Free Guide Now</h2>
                 
                 <form id="signupForm">
                     <div class="form-group">
