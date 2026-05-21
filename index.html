@@ -325,14 +325,15 @@
                     const contact = await response.json();
                     
                     // Fire tag to trigger workflow
-                    await fetch('https://api.globalcontrol.io/api/ai/tags/fire-tag/islington-guide-download', {
+                    const tagId = '6a0ec9419623b6235f9176dc'; // islington-guide-download tag
+                    await fetch(`https://api.globalcontrol.io/api/ai/tags/fire-tag/${tagId}`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
                             'X-API-KEY': API_KEY
                         },
                         body: JSON.stringify({
-                            contactId: contact.id
+                            contactId: contact.data._id
                         })
                     });
                     
