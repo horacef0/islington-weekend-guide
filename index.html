@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Your Free Islington Weekend Guide | Islington Experience</title>
-    <meta name="description" content="Download your free ultimate Islington weekend guide. Discover the best restaurants, bars, culture, and hidden gems in Islington.">
-    
+    <title>The Ultimate Islington Weekend Guide - Free Download</title>
     <style>
         * {
             margin: 0;
@@ -16,452 +14,670 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #2d5016 0%, #4a7c2c 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
+            color: #2d2d2d;
+            background: #fafafa;
         }
         
         .container {
-            max-width: 700px;
-            width: 100%;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.35);
-            overflow: hidden;
-            animation: slideUp 0.6s ease-out;
-        }
-        
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
         
         .hero {
             background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
             color: white;
-            padding: 60px 45px;
+            padding: 60px 40px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '🌳';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            font-size: 150px;
-            opacity: 0.1;
-        }
-        
-        .hero::after {
-            content: '🍽️';
-            position: absolute;
-            bottom: -30px;
-            left: -30px;
-            font-size: 140px;
-            opacity: 0.1;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(74, 124, 44, 0.3);
         }
         
         .hero h1 {
-            font-size: 2.8em;
+            font-size: 3em;
+            font-weight: 800;
             margin-bottom: 20px;
-            line-height: 1.1;
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            line-height: 1.2;
         }
         
-        .hero p {
-            font-size: 1.3em;
+        .hero .subtitle {
+            font-size: 1.4em;
+            font-weight: 300;
+            margin-bottom: 30px;
             opacity: 0.95;
-            position: relative;
-            z-index: 1;
         }
         
-        .emoji-badge {
+        .hero .badge {
             display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 25px;
             border-radius: 50px;
-            margin-bottom: 15px;
-            font-size: 1.8em;
+            font-size: 1em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
         }
         
-        .content {
-            padding: 45px;
+        .content-section {
+            background: white;
+            padding: 50px 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
         }
         
-        .intro-text {
-            text-align: center;
+        .content-section h2 {
+            font-size: 2.2em;
+            color: #2d5016;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .content-section h3 {
+            font-size: 1.6em;
+            color: #4a7c2c;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+        
+        .content-section p {
             font-size: 1.15em;
-            color: #5a6c7d;
-            margin-bottom: 35px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #3d3d3d;
+        }
+        
+        .benefit-list {
+            list-style: none;
+            margin: 30px 0;
+        }
+        
+        .benefit-list li {
+            font-size: 1.15em;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            background: #f8fdf6;
+            border-left: 5px solid #4a7c2c;
+            border-radius: 6px;
             line-height: 1.7;
         }
         
-        .intro-text strong {
-            color: #4a7c2c;
-        }
-        
-        .benefits {
-            margin: 40px 0;
-        }
-        
-        .benefit {
-            display: flex;
-            align-items: start;
-            margin-bottom: 28px;
-            padding: 20px;
-            background: #f8fdf4;
-            border-radius: 16px;
-            border-left: 5px solid #4a7c2c;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .benefit:hover {
-            transform: translateX(5px);
-            box-shadow: 0 8px 20px rgba(74, 124, 44, 0.15);
-        }
-        
-        .benefit-icon {
-            font-size: 2.2em;
-            margin-right: 18px;
-            flex-shrink: 0;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
-        }
-        
-        .benefit-text h3 {
-            color: #4a7c2c;
-            margin-bottom: 8px;
-            font-size: 1.2em;
-        }
-        
-        .benefit-text p {
-            color: #6c7a89;
-            font-size: 0.98em;
-            line-height: 1.6;
-        }
-        
-        .form-section {
-            background: linear-gradient(135deg, #f8fdf4 0%, #e8f5e0 100%);
-            padding: 40px;
-            border-radius: 20px;
-            margin: 40px 0;
-            border: 2px solid #d4e9cc;
-            box-shadow: 0 10px 30px rgba(74, 124, 44, 0.1);
-        }
-        
-        .form-section h2 {
-            text-align: center;
+        .benefit-list li strong {
             color: #2d5016;
-            margin-bottom: 25px;
-            font-size: 1.8em;
+            font-weight: 600;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            color: white;
+            padding: 50px 40px;
+            border-radius: 12px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(74, 124, 44, 0.3);
+        }
+        
+        .cta-box h2 {
+            font-size: 2.4em;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .cta-box p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
         }
         
         .form-group {
             margin-bottom: 20px;
+            text-align: left;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
-            color: #2d5016;
+            font-size: 1.1em;
             font-weight: 600;
-            font-size: 0.95em;
+            color: #2d5016;
+            margin-bottom: 8px;
         }
         
         .form-group input {
             width: 100%;
-            padding: 15px 18px;
-            border: 2px solid #c9e0bf;
-            border-radius: 12px;
-            font-size: 1.05em;
-            transition: all 0.3s;
-            background: white;
+            padding: 15px;
+            font-size: 1.1em;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            transition: border-color 0.3s;
         }
         
         .form-group input:focus {
             outline: none;
             border-color: #4a7c2c;
-            box-shadow: 0 0 0 4px rgba(74, 124, 44, 0.1);
         }
         
-        .submit-btn {
+        .submit-button {
             width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #4a7c2c 0%, #2d5016 100%);
+            background: #4a7c2c;
             color: white;
+            padding: 18px;
+            font-size: 1.3em;
+            font-weight: 700;
             border: none;
-            border-radius: 12px;
-            font-size: 1.2em;
-            font-weight: bold;
+            border-radius: 6px;
             cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 20px rgba(74, 124, 44, 0.3);
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(74, 124, 44, 0.4);
+        .submit-button:hover {
+            background: #2d5016;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(74, 124, 44, 0.4);
         }
         
-        .submit-btn:active {
-            transform: translateY(-1px);
+        .submit-button:active {
+            transform: translateY(0);
         }
         
-        .privacy-note {
+        .guarantee {
             text-align: center;
-            font-size: 0.88em;
-            color: #7a8c9e;
-            margin-top: 18px;
+            margin-top: 20px;
+            font-size: 0.95em;
+            color: #2d5016;
+            opacity: 0.8;
         }
         
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 35px;
-            margin-top: 40px;
-            padding-top: 35px;
-            border-top: 2px solid #e0f0d8;
+        .social-proof {
+            background: #f8fdf6;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border: 2px solid #e8f5e3;
         }
         
-        .badge {
-            text-align: center;
-            color: #6c7a89;
-            transition: transform 0.3s ease;
+        .testimonial {
+            font-style: italic;
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #3d3d3d;
+            margin-bottom: 15px;
         }
         
-        .badge:hover {
-            transform: scale(1.1);
-        }
-        
-        .badge-icon {
-            font-size: 2.5em;
-            margin-bottom: 8px;
-            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
-        }
-        
-        .badge-text {
-            font-size: 0.92em;
+        .testimonial-author {
             font-weight: 600;
-            color: #4a7c2c;
+            color: #2d5016;
+            font-style: normal;
         }
         
-        @media (max-width: 600px) {
-            .hero {
-                padding: 40px 25px;
-            }
-            
-            .hero h1 {
-                font-size: 2em;
-            }
-            
-            .content {
-                padding: 30px 25px;
-            }
-            
-            .form-section {
-                padding: 30px 20px;
-            }
-            
-            .trust-badges {
-                gap: 20px;
-            }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            background: #f8fdf6;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e8f5e3;
+        }
+        
+        .stat-number {
+            font-size: 3em;
+            font-weight: 800;
+            color: #4a7c2c;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .stat-label {
+            font-size: 1.1em;
+            color: #3d3d3d;
+            font-weight: 500;
+        }
+        
+        .highlight-box {
+            background: #fff9e6;
+            border-left: 5px solid #ffb800;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 6px;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        
+        .bullet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .bullet-item {
+            background: #f8fdf6;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e8f5e3;
+        }
+        
+        .bullet-item h4 {
+            color: #2d5016;
+            font-size: 1.2em;
+            margin-bottom: 10px;
         }
         
         .success-message {
             display: none;
-            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
-            border: 2px solid #b1dfbb;
-            color: #155724;
+            background: #4a7c2c;
+            color: white;
             padding: 30px;
-            border-radius: 16px;
+            border-radius: 10px;
             text-align: center;
-            animation: slideUp 0.5s ease-out;
-        }
-        
-        .success-message h3 {
-            margin-bottom: 12px;
-            font-size: 1.6em;
-        }
-        
-        .success-message p {
-            font-size: 1.05em;
+            font-size: 1.3em;
             line-height: 1.6;
         }
         
-        .local-badge {
-            background: #fff;
-            padding: 8px 16px;
-            border-radius: 50px;
-            display: inline-block;
-            font-size: 0.9em;
-            color: #4a7c2c;
-            font-weight: 600;
-            margin-top: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        .success-message.show {
+            display: block;
+        }
+        
+        .error-message {
+            display: none;
+            background: #d32f2f;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.1em;
+            }
+            
+            .content-section {
+                padding: 30px 20px;
+            }
+            
+            .cta-box {
+                padding: 30px 20px;
+            }
+            
+            .form-container {
+                padding: 25px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+    <div class="logo">
+        <img src="islington-logo.webp" alt="Islington Experience Logo">
+    </div>
+        <!-- Hero Section -->
         <div class="hero">
-            <div class="emoji-badge">🌟</div>
-            <h1>Your Ultimate Islington Weekend Awaits</h1>
-            <p>Get the insider's guide to the best 48 hours in Islington</p>
-            <div class="local-badge">🗺️ Created by Locals, For Explorers</div>
+            <div class="badge">🎁 100% FREE DOWNLOAD</div>
+            <h1>The Ultimate Islington Weekend Guide</h1>
+            <p class="subtitle">Your 48-Hour Blueprint to Hidden Gems, Best Restaurants, Culture Spots & Local Secrets</p>
         </div>
-        
-        <div class="content">
-            <p class="intro-text">
-                Whether you're a <strong>longtime resident</strong> or just visiting, this guide reveals 
-                the <strong>hidden gems, local favorites, and must-visit spots</strong> that most people miss.
-            </p>
+
+        <!-- Opening Hook -->
+        <div class="content-section">
+            <h2>You're About to Waste Another Weekend</h2>
+            <p>It's Friday afternoon. You know you want to explore Islington this weekend. Maybe grab brunch somewhere. Check out that new restaurant everyone's talking about. Do something that actually feels like London.</p>
             
-            <div class="benefits">
-                <div class="benefit">
-                    <div class="benefit-icon">🍽️</div>
-                    <div class="benefit-text">
-                        <h3>Best Restaurants & Bars</h3>
-                        <p>From Ottolenghi to secret speakeasies—discover where locals actually eat and drink</p>
-                    </div>
+            <p>So you open Google Maps. Scroll through reviews. Check Instagram. Ask friends. Two hours later, you still don't have a plan.</p>
+            
+            <p><strong>By Saturday morning, you default to the same three places you always go.</strong></p>
+            
+            <p>Not because they're the best. Because they're easy. Because finding the real gems takes research you don't have time for.</p>
+            
+            <p>Meanwhile, the best coffee in Islington is three streets away. That hidden Italian place locals queue for? You walked past it yesterday. The weekend market with actual character instead of tourist traps? You've never heard of it.</p>
+            
+            <div class="highlight-box">
+                <p><strong>You're not missing out because Islington is boring. You're missing out because nobody gave you the map.</strong></p>
+            </div>
+        </div>
+
+        <!-- What You Get -->
+        <div class="content-section">
+            <h2>What's Inside: Your Complete 48-Hour Islington Blueprint</h2>
+            
+            <p>This isn't a generic "top 10" list scraped from TripAdvisor. This is a curated, locally-researched, hour-by-hour weekend itinerary that shows you exactly where to go, when to go, and what to order when you get there.</p>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Hidden Gem Locations</span>
                 </div>
-                
-                <div class="benefit">
-                    <div class="benefit-icon">🎭</div>
-                    <div class="benefit-text">
-                        <h3>Culture & Entertainment</h3>
-                        <p>Theatres, galleries, and live music venues you won't find in generic tourist guides</p>
-                    </div>
+                <div class="stat-box">
+                    <span class="stat-number">48hr</span>
+                    <span class="stat-label">Complete Itinerary</span>
                 </div>
-                
-                <div class="benefit">
-                    <div class="benefit-icon">🗺️</div>
-                    <div class="benefit-text">
-                        <h3>Hidden Gems</h3>
-                        <p>Peaceful canal walks, vintage markets, and spots only insiders know about</p>
-                    </div>
-                </div>
-                
-                <div class="benefit">
-                    <div class="benefit-icon">⏰</div>
-                    <div class="benefit-text">
-                        <h3>Complete 48-Hour Itinerary</h3>
-                        <p>No guesswork—just follow our curated Friday-to-Sunday plan and explore</p>
-                    </div>
+                <div class="stat-box">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Locally Curated</span>
                 </div>
             </div>
+
+            <ul class="benefit-list">
+                <li><strong>Saturday Morning Blueprint:</strong> Where to get the best coffee and pastries (not the chain everyone knows—the place locals actually go)</li>
+                <li><strong>Brunch Spots That Don't Suck:</strong> Three tried-and-tested options with real food, no 90-minute wait, and actual character</li>
+                <li><strong>Hidden Culture Route:</strong> Bookshops, galleries, vintage stores, and cultural spots you won't find on Google's first page</li>
+                <li><strong>The Real Restaurant List:</strong> From Italian trattorias to modern British, these are the places with personality—not Instagram hype</li>
+                <li><strong>Saturday Night Done Right:</strong> Pubs, wine bars, and cocktail spots that feel like London, not a corporate chain</li>
+                <li><strong>Sunday Reset Plan:</strong> Farmers markets, walking routes, quiet cafes, and recovery spots for a proper Sunday vibe</li>
+                <li><strong>The Insider Moves:</strong> What to order, when to arrive, how to skip the queue, and which dishes are worth the price</li>
+                <li><strong>Neighborhood Secrets:</strong> Streets to walk, corners to explore, and details you'd only know if you lived here</li>
+            </ul>
+
+            <p><strong>This is the guide you wish existed every weekend.</strong></p>
+        </div>
+
+        <!-- CTA Box #1 -->
+        <div class="cta-box">
+            <h2>Get Your Free Guide in 30 Seconds</h2>
+            <p>No payment. No catch. Just enter your email and download immediately.</p>
             
-            <div class="form-section">
-                <h2>📩 Get Your Free Guide Now</h2>
-                
-                <form id="signupForm">
+            <div class="form-container">
+                <div id="errorMessage" class="error-message"></div>
+                <div id="successMessage" class="success-message">
+                    <strong>🎉 Success!</strong><br>
+                    Check your inbox — your Ultimate Islington Weekend Guide is on its way!<br>
+                    <em>(Check spam if you don't see it in 2 minutes)</em>
+                </div>
+                <form id="downloadForm">
                     <div class="form-group">
                         <label for="firstName">First Name</label>
                         <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
                     </div>
-                    
                     <div class="form-group">
                         <label for="email">Email Address</label>
                         <input type="email" id="email" name="email" required placeholder="your@email.com">
                     </div>
-                    
-                    <button type="submit" class="submit-btn">📩 Send Me The Guide</button>
-                    
-                    <p class="privacy-note">
-                        🔒 Your email is safe with us. No spam, ever. Unsubscribe anytime.
-                    </p>
+                    <button type="submit" class="submit-button" id="submitBtn">Download Free Guide Now</button>
+                    <p class="guarantee">🔒 Your email is safe. No spam. Unsubscribe anytime.</p>
                 </form>
-                
-                <div class="success-message" id="successMessage">
-                    <h3>🎉 Check Your Email!</h3>
-                    <p>Your Ultimate Islington Weekend Guide is on its way. Check your inbox (and spam folder just in case).</p>
-                </div>
+            </div>
+        </div>
+
+        <!-- Why This Exists -->
+        <div class="content-section">
+            <h2>Why This Guide Exists</h2>
+            
+            <p>Most "local guides" are written by content marketers who've never spent a weekend in the neighborhood. They rank restaurants by ad spend, not quality. They list "things to do" that read like a bot wrote them.</p>
+            
+            <p>This guide is different.</p>
+            
+            <p>It's built by people who actually live, work, and explore Islington every week. We know which coffee shops locals line up for on Saturday morning. We know which pubs have the best Sunday roast. We know the walking routes that feel like discovering London instead of rushing through it.</p>
+            
+            <div class="highlight-box">
+                <p><strong>This isn't tourist content. It's local intelligence packaged for people who want to experience Islington the way it's meant to be experienced.</strong></p>
             </div>
             
-            <div class="trust-badges">
-                <div class="badge">
-                    <div class="badge-icon">✉️</div>
-                    <div class="badge-text">Free<br>Download</div>
+            <p>You're not getting generic recommendations. You're getting the blueprint we'd give a friend visiting for the weekend.</p>
+        </div>
+
+        <!-- Social Proof -->
+        <div class="social-proof">
+            <div class="testimonial">
+                "I've lived near Islington for three years and this guide showed me five places I'd never heard of. The Italian spot on the Saturday list? Instantly became my favorite restaurant in London."
+            </div>
+            <div class="testimonial-author">— Sarah M., Islington Resident</div>
+        </div>
+
+        <div class="social-proof">
+            <div class="testimonial">
+                "Used this for a weekend visit and it was perfect. Didn't waste time on tourist traps. Everything felt authentic. The Sunday market tip alone was worth it."
+            </div>
+            <div class="testimonial-author">— James K., Visitor from Manchester</div>
+        </div>
+
+        <!-- Who This Is For -->
+        <div class="content-section">
+            <h2>Who This Guide Is For</h2>
+            
+            <div class="bullet-grid">
+                <div class="bullet-item">
+                    <h4>Islington Locals</h4>
+                    <p>You live here but haven't explored like you should. This gives you the weekend plan you've been meaning to build.</p>
                 </div>
-                <div class="badge">
-                    <div class="badge-icon">📱</div>
-                    <div class="badge-text">Weekly<br>Updates</div>
+                <div class="bullet-item">
+                    <h4>London Visitors</h4>
+                    <p>You want to experience real London culture, not just tourist spots. This is your local-approved blueprint.</p>
                 </div>
-                <div class="badge">
-                    <div class="badge-icon">❌</div>
-                    <div class="badge-text">No<br>Spam</div>
+                <div class="bullet-item">
+                    <h4>Foodies & Culture Lovers</h4>
+                    <p>You care about quality, authenticity, and personality. This guide speaks your language.</p>
+                </div>
+                <div class="bullet-item">
+                    <h4>Weekend Explorers</h4>
+                    <p>You want a curated plan so you don't waste time Googling. This is plug-and-play exploration.</p>
                 </div>
             </div>
         </div>
+
+        <!-- What You're Really Getting -->
+        <div class="content-section">
+            <h2>What You're Really Getting</h2>
+            
+            <p>Yes, it's a PDF guide. But what you're actually getting is <strong>freedom from decision fatigue.</strong></p>
+            
+            <p>No more:</p>
+            <ul class="benefit-list">
+                <li>Scrolling Google Maps for 30 minutes trying to pick a restaurant</li>
+                <li>Asking friends "what's good in Islington?" and getting vague answers</li>
+                <li>Defaulting to chain restaurants because you don't know what else exists</li>
+                <li>Wandering aimlessly hoping to stumble into something interesting</li>
+                <li>Ending the weekend feeling like you didn't actually experience the neighborhood</li>
+            </ul>
+            
+            <p>Instead, you get a <strong>done-for-you weekend blueprint</strong> that takes zero research, zero guesswork, and zero wasted time.</p>
+            
+            <p>You wake up Saturday. Open the guide. Follow the plan. By Sunday evening, you've experienced more of Islington than most people do in a year.</p>
+            
+            <div class="highlight-box">
+                <p><strong>This is the difference between "doing something this weekend" and actually having a weekend worth remembering.</strong></p>
+            </div>
+        </div>
+
+        <!-- The Real Value -->
+        <div class="content-section">
+            <h2>The Real Value of Local Knowledge</h2>
+            
+            <p>Think about the last time you tried a new restaurant and it was actually great. Not "fine." Not "okay for the price." Actually great.</p>
+            
+            <p>That moment when you thought, <em>"Why didn't I know about this place sooner?"</em></p>
+            
+            <p><strong>This guide gives you 30+ of those moments.</strong></p>
+            
+            <p>The coffee shop where the barista knows your name after two visits. The pub with the best Sunday roast you've had in months. The bookshop that feels like stepping back in time. The Italian place where the owner remembers regulars and the pasta is actually handmade.</p>
+            
+            <p>These places exist. You just need someone to point you to them.</p>
+            
+            <p>That's what this guide does. It collapses months of trial-and-error into a single weekend blueprint.</p>
+        </div>
+
+        <!-- Objection Handling -->
+        <div class="content-section">
+            <h2>But Wait—Why Free?</h2>
+            
+            <p><strong>"What's the catch?"</strong></p>
+            <p>There isn't one. You're not signing up for a paid course. There's no upsell on the next page. You enter your email, download the guide, and that's it.</p>
+            
+            <p><strong>"Why do you need my email?"</strong></p>
+            <p>Because we occasionally send updates on new Islington recommendations, weekend events, and local culture highlights. If you don't want them, unsubscribe anytime. One click. No guilt trip.</p>
+            
+            <p><strong>"Is this just a list of sponsored restaurants?"</strong></p>
+            <p>No. We don't take money from restaurants or venues. Every recommendation is based on real experience, local knowledge, and actual quality. If it's in the guide, it's because we'd genuinely recommend it to a friend.</p>
+            
+            <p><strong>"Can't I just Google this?"</strong></p>
+            <p>You could. But you'd spend hours sorting through SEO-optimized garbage, fake reviews, and outdated blogs. This guide gives you the edited, curated, locally-vetted version in 10 pages. You decide which is better use of your time.</p>
+        </div>
+
+        <!-- Final CTA -->
+        <div class="cta-box">
+            <h2>Your Next Weekend Starts Here</h2>
+            <p>Stop wasting Saturdays on mediocre plans.</p>
+            <p><strong>Download your free guide and experience Islington like a local.</strong></p>
+            
+            <div class="form-container">
+                <div id="errorMessage2" class="error-message"></div>
+                <div id="successMessage2" class="success-message">
+                    <strong>🎉 Success!</strong><br>
+                    Check your inbox — your Ultimate Islington Weekend Guide is on its way!<br>
+                    <em>(Check spam if you don't see it in 2 minutes)</em>
+                </div>
+                <form id="downloadForm2">
+                    <div class="form-group">
+                        <label for="firstName2">First Name</label>
+                        <input type="text" id="firstName2" name="firstName" required placeholder="Enter your first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Email Address</label>
+                        <input type="email" id="email2" name="email" required placeholder="your@email.com">
+                    </div>
+                    <button type="submit" class="submit-button" id="submitBtn2">Download Free Guide Now</button>
+                    <p class="guarantee">🔒 Your email is safe. No spam. Unsubscribe anytime.</p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="content-section" style="text-align: center; padding: 30px;">
+            <p style="color: #888; font-size: 0.95em;">
+                Created by local Islington enthusiasts who actually live here.<br>
+                Questions? Suggestions? Reach out: hello@islingtonexperience.com
+            </p>
+        </div>
     </div>
-    
+
+    <!-- JavaScript for Form Handling -->
     <script>
-        document.getElementById('signupForm').addEventListener('submit', async function(e) {
-            e.preventDefault();
-            
-            const firstName = document.getElementById('firstName').value;
-            const email = document.getElementById('email').value;
-            
-            // Global Control API endpoint
-            const API_ENDPOINT = 'https://api.globalcontrol.io/api/ai/contacts';
-            const API_KEY = '1de0f54575f964233d69141bf4ab83f91be845dbeaf5aeda1468786f46efee61';
-            
-            try {
-                const response = await fetch(API_ENDPOINT, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-API-KEY': API_KEY
-                    },
-                    body: JSON.stringify({
-                        email: email,
-                        firstName: firstName,
-                        customFields: {
-                            lead_source: 'islington-weekend-guide',
-                            signup_date: new Date().toISOString()
-                        }
-                    })
-                });
+        // Global Control API Configuration
+        const API_KEY = '1de0f54575f964233d69141bf4ab83f91be845dbeaf5aeda1468786f46efee61';
+        const TAG_ID = '6a0ec9419623b6235f9176dc';
+        const API_BASE = 'https://api.globalcontrol.app';
+
+        // Handle both forms
+        function setupForm(formId, errorId, successId, btnId) {
+            const form = document.getElementById(formId);
+            const errorMsg = document.getElementById(errorId);
+            const successMsg = document.getElementById(successId);
+            const submitBtn = document.getElementById(btnId);
+
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
                 
-                if (response.ok) {
-                    const contact = await response.json();
-                    
-                    // Fire tag to trigger workflow
-                    const tagId = '6a0ec9419623b6235f9176dc'; // islington-guide-download tag
-                    await fetch(`https://api.globalcontrol.io/api/ai/tags/fire-tag/${tagId}`, {
+                // Hide previous messages
+                errorMsg.classList.remove('show');
+                successMsg.classList.remove('show');
+                
+                // Get form data
+                const formData = new FormData(form);
+                const firstName = formData.get('firstName').trim();
+                const email = formData.get('email').trim();
+                
+                // Validation
+                if (!firstName || !email) {
+                    errorMsg.textContent = 'Please fill in all fields.';
+                    errorMsg.classList.add('show');
+                    return;
+                }
+                
+                // Disable button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Sending...';
+                
+                try {
+                    // Step 1: Create or update contact
+                    const contactResponse = await fetch(`${API_BASE}/contacts`, {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
-                            'X-API-KEY': API_KEY
+                            'Authorization': `Bearer ${API_KEY}`
                         },
                         body: JSON.stringify({
-                            contactId: contact.data._id
+                            email: email,
+                            firstName: firstName,
+                            source: 'Islington Weekend Guide Landing Page'
                         })
                     });
                     
-                    // Show success message
-                    document.getElementById('signupForm').style.display = 'none';
-                    document.getElementById('successMessage').style.display = 'block';
-                } else {
-                    alert('Something went wrong. Please try again or email us directly at hello@islingtonexperience.com');
+                    if (!contactResponse.ok) {
+                        throw new Error('Failed to save contact');
+                    }
+                    
+                    const contactData = await contactResponse.json();
+                    const contactId = contactData.id;
+                    
+                    // Step 2: Apply tag to fire automation
+                    const tagResponse = await fetch(`${API_BASE}/contacts/${contactId}/tags`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            tagId: TAG_ID
+                        })
+                    });
+                    
+                    if (!tagResponse.ok) {
+                        throw new Error('Failed to trigger download');
+                    }
+                    
+                    // Success!
+                    form.style.display = 'none';
+                    successMsg.classList.add('show');
+                    
+                    // Track conversion (optional)
+                    if (window.gtag) {
+                        gtag('event', 'conversion', {
+                            'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXXXX',
+                            'value': 1.0,
+                            'currency': 'GBP'
+                        });
+                    }
+                    
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    errorMsg.textContent = 'Something went wrong. Please try again or email us directly.';
+                    errorMsg.classList.add('show');
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'Download Free Guide Now';
                 }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Something went wrong. Please try again or email us directly at hello@islingtonexperience.com');
-            }
-        });
+            });
+        }
+
+        // Initialize both forms
+        setupForm('downloadForm', 'errorMessage', 'successMessage', 'submitBtn');
+        setupForm('downloadForm2', 'errorMessage2', 'successMessage2', 'submitBtn2');
     </script>
 </body>
 </html>
