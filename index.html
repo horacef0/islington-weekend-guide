@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Islington Weekend Guide | Islington Experience</title>
+    <meta name="description" content="Download your free ultimate Islington weekend guide. Discover the best restaurants, bars, culture, and hidden gems in Islington.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 50px 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .benefits {
+            margin: 30px 0;
+        }
+        
+        .benefit {
+            display: flex;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+        
+        .benefit-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .benefit-text h3 {
+            color: #e74c3c;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+        
+        .benefit-text p {
+            color: #7f8c8d;
+            font-size: 0.95em;
+        }
+        
+        .form-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        
+        .form-section h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #34495e;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #e74c3c;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .privacy-note {
+            text-align: center;
+            font-size: 0.85em;
+            color: #95a5a6;
+            margin-top: 15px;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .badge {
+            text-align: center;
+            color: #7f8c8d;
+        }
+        
+        .badge-icon {
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+        
+        .badge-text {
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .hero {
+                padding: 30px 20px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .form-section {
+                padding: 20px;
+            }
+        }
+        
+        .success-message {
+            display: none;
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .success-message h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🌟 Your Ultimate Islington Weekend Awaits</h1>
+            <p>Get the insider's guide to the best 48 hours in Islington</p>
+        </div>
+        
+        <div class="content">
+            <div class="benefits">
+                <div class="benefit">
+                    <div class="benefit-icon">🍽️</div>
+                    <div class="benefit-text">
+                        <h3>Best Restaurants & Bars</h3>
+                        <p>From Ottolenghi to secret speakeasies—discover where locals actually eat and drink</p>
+                    </div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon">🎭</div>
+                    <div class="benefit-text">
+                        <h3>Culture & Entertainment</h3>
+                        <p>Theatres, galleries, and live music venues you won't find in generic tourist guides</p>
+                    </div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon">🗺️</div>
+                    <div class="benefit-text">
+                        <h3>Hidden Gems</h3>
+                        <p>Peaceful canal walks, vintage markets, and spots only insiders know about</p>
+                    </div>
+                </div>
+                
+                <div class="benefit">
+                    <div class="benefit-icon">⏰</div>
+                    <div class="benefit-text">
+                        <h3>Complete 48-Hour Itinerary</h3>
+                        <p>No guesswork—just follow our curated Friday-to-Sunday plan and explore</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Get Your Free Guide Now</h2>
+                
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">📩 Send Me The Guide</button>
+                    
+                    <p class="privacy-note">
+                        🔒 Your email is safe with us. No spam, ever. Unsubscribe anytime.
+                    </p>
+                </form>
+                
+                <div class="success-message" id="successMessage">
+                    <h3>🎉 Check Your Email!</h3>
+                    <p>Your Ultimate Islington Weekend Guide is on its way. Check your inbox (and spam folder just in case).</p>
+                </div>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="badge">
+                    <div class="badge-icon">✉️</div>
+                    <div class="badge-text">Free<br>Download</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">📱</div>
+                    <div class="badge-text">Weekly<br>Updates</div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">❌</div>
+                    <div class="badge-text">No<br>Spam</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const firstName = document.getElementById('firstName').value;
+            const email = document.getElementById('email').value;
+            
+            // Global Control API endpoint
+            const API_ENDPOINT = 'https://api.globalcontrol.io/api/ai/contacts';
+            const API_KEY = 'YOUR_GC_API_KEY'; // TODO: Replace with actual key
+            
+            try {
+                const response = await fetch(API_ENDPOINT, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-API-KEY': API_KEY
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        firstName: firstName,
+                        customFields: {
+                            lead_source: 'islington-weekend-guide',
+                            signup_date: new Date().toISOString()
+                        }
+                    })
+                });
+                
+                if (response.ok) {
+                    const contact = await response.json();
+                    
+                    // Fire tag to trigger workflow
+                    await fetch('https://api.globalcontrol.io/api/ai/tags/fire-tag/islington-guide-download', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-API-KEY': API_KEY
+                        },
+                        body: JSON.stringify({
+                            contactId: contact.id
+                        })
+                    });
+                    
+                    // Show success message
+                    document.getElementById('signupForm').style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                } else {
+                    alert('Something went wrong. Please try again or email us directly at hello@islingtonexperience.com');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Something went wrong. Please try again or email us directly at hello@islingtonexperience.com');
+            }
+        });
+    </script>
+</body>
+</html>
